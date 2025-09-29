@@ -39,7 +39,6 @@ class _ChatWebView extends StatelessWidget {
   final String? mainTitle;
 
   const _ChatWebView({
-    super.key,
     required this.url,
     required this.headers,
     this.mainTitle,
