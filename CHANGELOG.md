@@ -1,12 +1,11 @@
 # Changelog
 
-All notable changes to this package will be documented in this file.
+## 1.0.1
+- Fixed pubspec repository URL issue.
+- Improved documentation and pub.dev score compliance.
+- Updated example project and comments.
 
-## [1.0.0] - 2025-09-29
-### Added
+## 1.0.0
 - Initial release of `cinitiq_chat_sdk`.
-- Added `CinitiqChatSdk.openChat()` to open chat in a WebView.
-- Support for dynamic `mainTitle` parameter.
-- Customizable headers and query parameters for WebView request.
-- Back button included in the AppBar.
-- Default titles if `mainTitle` is not provided.
+- Added support for WebView integration with Cinitiq AI chat.
+- Customizable headers, query params, and AppBar title.

@@ -1,7 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+/// Main entry point for opening the Cinitiq AI chat inside a WebView.
+///
+/// Example:
+/// ```dart
+/// CinitiqChatSdk.openChat(
+///   context,
+///   token: "your_token_here",
+///   baseUrl: "https://example.com/chat",
+///   mainTitle: "Ma3aak Assistance",
+/// );
+/// ```
 class CinitiqChatSdk {
+  /// Opens the chat WebView.
+  ///
+  /// [context] The BuildContext of the current widget.
+  /// [token] Authorization token.
+  /// [baseUrl] Base URL of the chat page.
+  /// [headers] Optional HTTP headers.
+  /// [queryParams] Optional query parameters to append to the URL.
+  /// [mainTitle] Optional main title for AppBar.
   static Future<dynamic> openChat(
     BuildContext context, {
     required String token,
@@ -33,6 +52,7 @@ class CinitiqChatSdk {
   }
 }
 
+/// Internal widget for displaying the chat WebView.
 class _ChatWebView extends StatelessWidget {
   final String url;
   final Map<String, String> headers;
